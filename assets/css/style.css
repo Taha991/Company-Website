@@ -2539,3 +2539,43 @@ width: 100%;
     max-height: 60%;
   }
 }
+
+@media only screen and (min-width: 438px) and (max-width: 989px) {
+  .footer {
+    padding-block: 40px 60px;
+  }
+  
+  .footer__container {
+    display: block;
+  }
+  
+  .footer-brand {
+    text-align: center;
+    margin-block-end: 40px;
+  }
+  
+  .footer-list {
+    text-align: center;
+    margin-block-end: 40px;
+  }
+  
+  .footer-list-title {
+    margin-block-end: 16px;
+  }
+  
+  .footer-link {
+    display: block;
+    margin-block-end: 8px;
+  }
+  
+  .social-list {
+    margin-block-end: 32px;
+  }
+  
+  .logo-image {
+    animation: none;
+    margin-inline: auto;
+    display: block;
+    margin-block-end: 24px;
+  }
+}
