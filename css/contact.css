@@ -1,9 +1,4 @@
 
-
-/*-----------------------------------*\
-  #COMPONENTS
-\*-----------------------------------*/
-
 @import url("../components/btn.css");
 
 
@@ -21,12 +16,12 @@
 
 .contact .container {
   display: grid;
-  gap: 48px;
+  gap: 68px;
 }
 
 .contact-form {
   background-color: var(--white);
-  padding: 25px;
+  padding: 35px;
 }
 
 .contact-text { margin-block: 5px 30px; }
@@ -45,7 +40,7 @@
 
 textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 150px;
   max-height: 150px;
 }
 

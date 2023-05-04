@@ -1,600 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
-    - primary meta tags
-  -->
-  <title>EBdaa | ERP SOFTWARE</title>
-  <meta name="title" content="Ebdaa">
-  <meta name="description" content="This is a business agency html template made by codewithsadee">
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- 
     - favicon
-  -->
+  -->  
   <link rel="shortcut icon" href="./logo.png" type="image/svg+xml">
 
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
-<!--  -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-<!--  -->
+    <title>EBdaa | ERP SOFTWARE</title>
+  
+    <meta name="title" content="Ebdaa">
+    <meta name="description" content="Ebda"> 
 
 </head>
 
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
 
+    <div class="modal" data-modal>
 
-
-<body>
-
-  <div class="overlay" data-overlay></div>
-
-  <!--
-    - MODAL
-  -->
-
-  <div class="modal" data-modal>
-
-    <div class="modal-close-overlay" data-modal-overlay></div>
-
-    <div class="modal-content">
-
-      <button class="modal-close-btn" data-modal-close>
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
-
-      <div class="newsletter-img">
-        <img src="./Erp.png" alt="subscribe newsletter" width="400" height="400">
+        <div class="modal-close-overlay" data-modal-overlay></div>
+    
+        <div class="modal-content">
+    
+          <button class="modal-close-btn" data-modal-close>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+    
+          <div class="newsletter-img">
+            <img src="./img/Erp.png" alt="subscribe newsletter" width="400" height="400">
+          </div>
+    
+    
+        </div>
+    
       </div>
 
 
+    <!-- TOP NAV -->
+    <div class="top-nav" id="home">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <p> <i class='bx bxs-envelope'></i>info@c-dsit.com</p>
+                    <p> <i class='bx bxs-phone-call'></i>+2011-1884-9996</p>
+                </div>
+                <div class="col-auto social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-pinterest'></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 
-  </div>
+    <!-- BOTTOM NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand logo-container" href="#"><img class="logo" src="./img/proff.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" dir="rtl">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">من نحن</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">شركاؤنا</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">اتصل بنا</a>
+                    </li>
+                    
+                    <div class="language-selector m-2">
+                        <a href="#" class="current-language">اختيار اللغة</a>
+                        <ul class="language-menu">
+                          <li><a href="index.html">English</a></li>
+                          <li><a href="ar.html">العربية</a></li>
+                        </ul>
+                        
+                      </div>
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-brand ms-lg-3 m-2" dir="rtl">طلب عرض</a>
 
-
-
-
-
-
-  <!-- 
-    - #HEADER
-  -->
-
-
-
-  <header class="header" data-header>
-
-    <div class="container">
-  
-      <a href="#" class="logo">
-        <img src="./prof.png" width="74" height="24" alt="Erp home" class="logo-light">
-  
-        <img src="./prof.png" width="74" height="24" alt="Erp home" class="logo-dark">
-      </a>
-  
-      <nav class="navbar" data-navbar>
-  
-        <div class="navbar-top">
-          <a href="#" class="logo">
-            <img src="./prof.png" width="74" height="24" alt="Erp home">
-          </a>
-  
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
+                </ul>
+            </div>
         </div>
-  
-        <ul class="navbar-list" dir="rtl">
-  
-          <li>
-            <a href="#" class="navbar-link">الرئيسية</a>
-          </li>
-  
-          <li>
-            <a href="about.html" class="navbar-link">من نحن</a>
-          </li>
-  
-          <li>
-            <a href="#" class="navbar-link">شركاؤنا</a>
-          </li>
-  
-          <li>
-            <a href="./contact.html" class="navbar-link">اتصل بنا</a>
-          </li>
-          <!-- Language Selector -->
-          <div class="language-selector">
-            <a href="#" class="current-language">اختيار اللغة</a>
-            <ul class="language-menu">
-              <li><a href="index.html">English</a></li>
-              <li><a href="ar.html">العربية</a></li>
-            </ul>
-          </div>
-          <a href="./contact.html" class="btn btn-primary" dir="rtl">طلب عرض</a>
+    </nav>
 
-        </ul>
-  
-        <div class="wrapper">
-
-          
-
-          <a href="mailto:info@email.com" class="contact-link">info@c-dsit.com</a>
-  
-          <a href="tel:001234567890" class="contact-link">+2011-1884-9996</a>
-          <a href="tel:001234567890" class="contact-link">0222-609-509</a>
+    <!-- SLIDER -->
+    <div class="owl-carousel owl-theme hero-slider">
+        <div class="slide slide1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center text-white">
+                        <h4 class="text-white text-uppercase">ابداع</h4>
+                        <h1 class="display-3 my-4">               شركة إبداع للحلول الرقمية هي شركة برمجيات رقمية
+                        </h1>
+                        <a href="./contact.html" class="btn btn-brand">اتصل بنا</a>
+                        <a href="#portfolio" class="btn btn-outline-light ms-3">استكشاف الآن</a>
+                    </div>
+                </div>
+            </div>
         </div>
-  
-      
-
-  <ul class="social-list">
-  
-    <li>
-      <a href="#" class="social-link">
-        <ion-icon name="logo-twitter"></ion-icon>
-      </a>
-    </li>
-
-    <li>
-      <a href="#" class="social-link">
-        <ion-icon name="logo-facebook"></ion-icon>
-      </a>
-    </li>
-
-    <li>
-      <a href="#" class="social-link">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a>
-    </li>
-
-    <li>
-      <a href="#" class="social-link">
-        <ion-icon name="logo-youtube"></ion-icon>
-      </a>
-    </li>
-    <li>
-      <a href="#" class="social-link">
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a>
-    </li>
-  </ul>
- 
-  
-      </nav>
-  
-          
-      <div class="overlay" data-nav-toggler data-overlay></div>
-     
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
-    
-
+        <div class="slide slide2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1 text-white"  dir="rtl">
+                        <h4 class="text-white text-uppercase">ابداع</h4>
+                        <h3 class="display-3 my-4">              رائدة متخصصة في إنتاج حلول البرمجيات في جميع المجالات التكنولوجية، تمكنت من خلال التزامها وأدائها العالي من كسب ثقة العملاء.
+                        </h3>
+                        <a href="#" class="btn btn-brand">اتصل بنا</a>
+                        <a href="#" class="btn btn-outline-light ms-3">استكشاف الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
 
-
-
-
-      <!-- Hero -->
-
-      <section class="section hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.jpg')" dir="rtl">
+    <!-- ABOUT -->
+    <section id="about">
         <div class="container">
-      
-          <div class="hero-content">
-      
-            <h1 class="h1 hero-title">
-              شركة إبداع للحلول الرقمية هي شركة برمجيات رقمية
-            </h1>
-      
-            <p class="hero-text">
-              رائدة متخصصة في إنتاج حلول البرمجيات في جميع المجالات التكنولوجية، تمكنت من خلال التزامها وأدائها العالي من كسب ثقة العملاء.
-            </p>
-      
-            <div class="btn-wrapper">
-      
-              <a href="./contact.html" class="btn btn-primary">استكشاف الآن</a>
-      
-              <a href="./contact.html" class="btn btn-outline">اتصل بنا</a>
-      
+            <div class="intro">
+            <h6 class="section-subtitle">من نحن<h6>
+                <h1 class="h2 section-title">نحن نقدم أفضل الحلول الرقمية والتقنية</h1>
+
             </div>
-      
-          </div>
-      
-          <div class="hero-slider" data-slider>
-      
-            <div class="slider-inner">
-              <ul class="slider-container" data-slider-container>
-      
-                <li class="slider-item">
-      
-                  <figure class="img-holder" style="--width: 575; --height: 550;">
-                    <img src="./assets/images/hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover">
-                  </figure>
-      
-                </li>
-      
-                <li class="slider-item">
-      
-                  <div class="hero-card">
-                    <figure class="img-holder" style="--width: 575; --height: 550;">
-                      <img src="./assets/images/hero-slide-2.jpg" width="575" height="550" alt="hero banner"
-                        class="img-cover">
-                    </figure>
-      
-                    <button class="play-btn" aria-label="play adex intro">
-                      <ion-icon name="play" aria-hidden="true"></ion-icon>
-                    </button>
-                  </div>
-      
-                </li>
-      
-                <li class="slider-item">
-      
-                  <figure class="img-holder" style="--width: 575; --height: 550;">
-                    <img src="./assets/images/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
-                  </figure>
-      
-                </li>
-      
-              </ul>
+            <div class="row justify-content-center">
+                <div class="col-lg-5 py-5">
+                    <div class="row">
+
+                       
+
+                        <div class="col-12">
+                            <div class="info-box">
+                                <img src="img/about-icon-3.png" alt="">
+                                <div class="ms-4">
+                                    <h5>الحلول الرقمية</h5>
+                                    <p>                    نعمل من خلال فريق من 30-50 موظفًا بدوام كامل في فروع الشركة في...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="info-box">
+                                <img src="img/about-icon-1.png" alt="">
+                                <div class="ms-4">
+                                    <h5>تطوير التقنية والبرمجيات</h5>
+                                    <p> نستخدم خبراتنا في تطوير البرمجيات لتعزيز تجربة المستخدم وواجهة المستخدم لتكون أكثر سهولة ...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="info-box">
+                                <img src="img/about-icon-2.png" alt="">
+                                <div class="ms-4">
+                                    <h5>خبراء لأكثر من 20+ سنة</h5>
+                                    <p> يمتلك فريقنا الفني خبرة واسعة تمتد لأكثر من 20 عامًا في العمل على تطوير البرمجيات في أكبر الشركات العالمية.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/b.jpg" alt="">
+                </div>
             </div>
-      
-            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
-              <ion-icon name="arrow-back"></ion-icon>
-            </button>
-      
-            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
-              <ion-icon name="arrow-forward"></ion-icon>
-            </button>
-      
-          </div>
-      
         </div>
-      </section>
-      
+    </section>
 
-  
- <!-- 
-        - #Who We Re
-      -->
-
-      <section class="section about" id="about" aria-label="about" >
+    <!-- MILESTONE -->
+    <section id="milestone"  dir="rtl">
         <div class="container">
-
-          <figure class="about-banner">
-
-            <img src="./assets/images/b.jpg"  alt="Who we are"
-              class="w-50 about-img">
-
-         
-
-          </figure>
-
-          <div class="about-content">
-
-            <p class="section-subtitle">من نحن</p>
-          
-            <h2 class="h2 section-title">نحن نقدم أفضل الحلول الرقمية والتقنية</h2>
-          
-            <ul class="about-list">
-          
-              <li class="about-item">
-          
-                <div class="item-icon item-icon-1">
-                  <img src="./assets/images/about-icon-3.png" width="30" height="30" loading="lazy" aria-hidden="true">
+            <div class="row text-center justify-content-center gy-4">
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">1500</h1>
+                    <p class="mb-0">العملاء السعداء</p>
                 </div>
-          
-                <div>
-                  <h3 class="h3 item-title">الحلول الرقمية</h3>
-          
-                  <p class="item-text">
-                    نعمل من خلال فريق من 30-50 موظفًا بدوام كامل في فروع الشركة في...
-                  </p>
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">50+</h1>
+                    <p class="mb-0">الموظفين الخبراء</p>
                 </div>
-          
-              </li>
-          
-              <li class="about-item">
-          
-                <div class="item-icon item-icon-2">
-                  <img src="./assets/images/about-icon-1.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">7518
+                    </h1>
+                    <p class="mb-0">عدد تنزيلات التطبيق</p>
                 </div>
-          
-                <div>
-                  <h3 class="h3 item-title">تطوير التقنية والبرمجيات</h3>
-          
-                  <p class="item-text">
-                    نستخدم خبراتنا في تطوير البرمجيات لتعزيز تجربة المستخدم وواجهة المستخدم لتكون أكثر سهولة و...
-                  </p>
-                </div>
-          
-              </li>
-          
-              <li class="about-item">
-          
-                <div class="item-icon item-icon-3">
-                  <img src="./assets/images/about-icon-2.png" width="30" height="30" loading="lazy" aria-hidden="true">
-                </div>
-          
-                <div>
-                  <h3 class="h3 item-title">خبراء لأكثر من 20+ سنة</h3>
-          
-                  <p class="item-text">
-                    يمتلك فريقنا الفني خبرة واسعة تمتد لأكثر من 20 عامًا في العمل على تطوير البرمجيات في أكبر الشركات العالمية.
-                  </p>
-                </div>
-          
-              </li>
-          
-            </ul>
-          
-            <a href="./contact.html" class="btn btn-primaryy">
-              <span class="span">اعرف المزيد عنا</span>
-          
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
-          
-          </div>
-
-        </div>
-        <div class="containerr" dir="rtl">
-          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg')">
-
-            <li>
-              <p class="card-text">
-                <span class="h1"><ion-icon name="enter-outline"></ion-icon></span>
                
-                <span class="h1">7518</span>
-    
-                <span class="span">عدد تنزيلات التطبيق</span>
-              </p>
-            </li>
-    
-            <li>
-              <p class="card-text">
-                
-                <span class="h1"><ion-icon name="accessibility-outline"></ion-icon></span>
-                
-                <span class="h1">1500</span>
-    
-                <span class="span">العملاء السعداء</span>
-              </p>
-            </li>
-    
-            <li>
-              <p class="card-text">
-                
-                <span class="h1"><ion-icon name="people-outline"></ion-icon></span>
-               
-                <span class="h1">50+</span>
-    
-                <span class="span">الموظفين الخبراء</span>
-              </p>
-            </li>
-    
-    
-          </ul>
-    
+            </div>
         </div>
-        
-      </section>
+    </section>
 
+    <section id="services" class="text-center"  dir="rtl">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>لماذا تختارنا</h6>
+                        <h1>نحن نوفر الحلول لجعل حياة عملائنا أسهل.</h1>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/integrated.png" alt="">
+                        <h5>التكامل مع جميع الاجهزه</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/ux-1.png" alt="">
+                        <h5>تخطيط جديد لوجهات المستخدم</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/business-report.png" alt="">
+                        <h5>مراسله الاخطاء الذاتية</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/notification.png" alt="">
+                        <h5>مراكز متابعة الاخطارات</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/online-chat.png" alt="">
+                        <h5>الدعم الذاتي</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/dashboard-2.png" alt="">
+                        <h5>شاشة الاحصاءات والتقارير المتكاملة</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     
-    
-    
-
-
-<!-- WHY CHOOSING US -->
-<section class="features" dir="rtl">
-  <div class="containerr">
-
-    <p class="section-subtitle">لماذا تختارنا</p>
-
-    <h2 class="h2 section-title">نحن نوفر الحلول لجعل حياة عملائنا أسهل.</h2>
-
-    <ul class="features-list">
-
-      <li>
-        <a href="#" class="features-card">
-    
-          <div class="card-icon">
-            <img src="./assets/images/integrated.png"  alt="icon"/>
-          </div>
-    
-          <h3 class="card-title">التكامل مع جميع الاجهزه</h3>
-    
-          <div class="card-btn">
-            <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-          </div>
-    
-        </a>
-      </li>
-
-      <li>
-        <a href="#" class="features-card">
-
-          <div class="card-icon">
-            <img src="./assets/images/ux-1.png"  alt="icon"/>
-          </div>
-
-          <h3 class="card-title">تخطيط جديد لوجهات المستخدم</h3>
-
-          <div class="card-btn">
-            <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-          </div>
-
-        </a>
-      </li>
-
-      <li>
-        <a href="#" class="features-card">
-
-          <div class="card-icon">
-            <img src="./assets/images/business-report.png"  alt="icon"/>
-          </div>
-
-          <h3 class="card-title">مراسله الاخطاء الذاتية</h3>
-
-          <div class="card-btn">
-            <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-          </div>
-
-        </a>
-      </li>
-
-      <li>
-        <a href="#" class="features-card">
-
-          <div class="card-icon">
-            <img src="./assets/images/notification.png"  alt="icon"/>
-          </div>
-
-          <h3 class="card-title">مراكز متابعة الاخطارات</h3>
-
-          <div class="card-btn">
-            <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-          </div>
-
-        </a>
-      </li>
-
-      <li>
-        <a href="#" class="features-card">
-
-          <div class="card-icon">
-            <img src="./assets/images/online-chat.png"  alt="icon"/>
-          </div>
-
-          <h3 class="card-title">الدعم الذاتي</h3>
-
-          <div class="card-btn">
-            <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-          </div>
-
-        </a>
-      </li>
-
-      <li>
-        <a href="#" class="features-card">
-
-          <div class="card-icon">
-            <img src="./assets/images/dashboard-2.png"  alt="icon"/>
-          </div>
-
-          <h3 class="card-title">شاشة الاحصاءات والتقارير المتكاملة</h3>
-
-          <div class="card-btn">
-            <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-          </div>
-
-        </a>
-      </li>
-
-      <li>
-        <a href="#" class="features-card">
-
-          <div class="card-icon">
-            <img src="./assets/images/unlimited-storage.png"  alt="icon"/>
-          </div>
-
-          <h3 class="card-title">عدد لانهائي من المتسخدمين</h3>
-
-          <div class="card-btn">
-            <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-          </div>
-
-        </a>
-      </li>
-
-      <li>
-        <a href="#" class="features-card">
-
-          <div class="card-icon">
-            <img src="./assets/images/no-fee-1.png"  alt="icon"/>
-          </div>
-
-          <h3 class="card-title">لا يوجد تجديد سنوي</h3>
-
-          <div class="card-btn">
-            <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-          </div>
-
-        </a>
-      </li>
-
-    </ul>
-
-  </div>
-</section>
-
-
-<!--  -->
-
-
-      <!-- 
-        - #WEB PRESENCE
-      -->
-
-      <section class="section feature" aria-labelledby="feature-label" dir="rtl">
+   
+    <section class="section feature bg-light" aria-labelledby="feature-label" dir="rtl">
         <div class="container">
 
           <figure class="feature-banner">
-            <img src="./x.jpg" width="800" height="531" loading="lazy" alt="feature banner"
+            <img src="./img/x.jpg" width="800" height="531" loading="lazy" alt="feature banner"
               class="w-100">
           </figure>
 
           <div class="feature-content">
+            <div class="intro">
+            <h6>مواقع الويب</h6>
+        </div>
 
-            <p class="section-subtitle" id="feature-label">مواقع الويب</p>
-          
             <h2 class="h2 section-title">
-              وجودك على شبكة الانترنت اصبح شيء اساسي في الوقت الحاضر
-            </h2>
-          
+              وجودك على شبكة الانترنت اصبح شيء اساسي في الوقت الحاضر        </h2>
+
             <p class="section-text">
               يتكون النظام من تطبيقات مختلفة، كل منها له وظائف فريدة، ويتم دمج هذه التطبيقات بشكل سلس مع بعضها البعض. يخدم النظام مجموعة واسعة من الصناعات، ويمكنك تخصيصه لتلبية احتياجات عملك من خلال إضافة تطبيقات جديدة حسب الحاجة.
             </p>
-          
+
             <ul class="feature-list">
 
               <li>
                 <div class="feature-card">
-          
+
                   <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    <i class='bx bx-check'></i>
                   </div>
-          
+
                   <span class="span">
                     الموقع الإلكتروني
                   </span>
-          
+
                 </div>
               </li>
-          
-              <li>
 
               <li>
                 <div class="feature-card">
 
                   <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    <i class='bx bx-check'></i>
                   </div>
 
                   <span class="span">
@@ -609,7 +334,7 @@
                 <div class="feature-card">
 
                   <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    <i class='bx bx-check'></i>
                   </div>
 
                   <span class="span">
@@ -624,7 +349,7 @@
                 <div class="feature-card">
 
                   <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    <i class='bx bx-check'></i>
                   </div>
 
                   <span class="span">
@@ -633,7 +358,7 @@
 
                 </div>
               </li>
-         
+            
 
             </ul>
 
@@ -643,287 +368,250 @@
       </section>
 
 
-
-
-
-  
-
-   
-      <!-- 
-        - #STATS
-      -->
-
-
-      
-
-
-
-
-      <!-- 
-        - #PROJECT
-      -->
-
-      <section class="section project" aria-labelledby="project-label" dir="rtl">
+    <section  id="portfolio"  >
         <div class="container">
-      
-          <p class="section-subtitle" id="project-label">الصناعات التي نخدمناها</p>
-      
-          <h2 class="h2 section-title">
-            تحقق من بعض تطبيقاتنا الرائعة مع الأفكار الإبداعية والتصميم الرائع.
-          </h2>
-      
-          <div class="slider">
-      
-            <ul class="grid-list">
-      
-              <li>
-                <div class="project-card">
-      
-                  <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                    <img src="./assets/images/hr.jpg" width="560" height="350" loading="lazy"
-                      alt="Ligula tristique quis risus" class="img-cover">
-                  </figure>
-      
-                  <div class="card-content">
-      
-                    <h3 class="h3">
-                      <a href="#" class="card-title">الموارد البشرية</a>
-                    </h3>
-      
-                    <p class="card-text">
-                      إدارة الموارد البشرية بما في ذلك إدارة الموظفين والأجور والحضور وإدارة التوظيف. تتضمن منتجات الموارد البشرية إدارة الموظفين، والتوظيف يتضمن التكامل مع وسائل التواصل الاجتماعي الخاصة بك ومنصات الوظائف على الإنترنت، وعلى وسائل التواصل الاجتماعي بما في ذلك Linkedin.
-                    </p>
-      
-                    <ul class="card-meta-list">
-      
-                    
-                      <li class="card-meta-item">
-                        <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-      
-                        <a href="#" class="meta-text">اقرأ المزيد</a>
-                      </li>
-      
-                    </ul>
-      
-                  </div>
-      
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>الصناعات التي نخدمناها</h6>
+                        
+                        <h5 class="mx-auto">            تحقق من بعض تطبيقاتنا الرائعة مع الأفكار الإبداعية والتصميم الرائع.
+                        </h5>
+                    </div>
                 </div>
-              </li>
-      
-              <li>
-                <div class="project-card">
-      
-                  <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                    <img src="./assets/images/accounting.jpg" width="560" height="350" loading="lazy"
-                      alt="Nullam id dolor elit id nibh" class="img-cover">
-                  </figure>
-      
-                  <div class="card-content">
-      
-                    <h3 class="h3">
-                      <a href="#" class="card-title">المحاسبة</a>
-                    </h3>
-      
-                    <p class="card-text">
-                      إدارة المحاسبة والمالية بما في ذلك حسابات الدائنين والمدينين. تتكون المحاسبة من العديد من الوحدات التي تغطي جميع مجالات الأعمال بما في ذلك المكونات التالية: دفتر الأستاذ العام (GL)
+            </div>
+        </div>
+        <div id="projects-slider" class="owl-theme owl-carousel">
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/facility.png" alt="">
+                <div class="content">
+                    <h2>ادارة المرافق</h2>
+                    
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/CRMM.png" alt="">
+                <div class="content">
+                    <h2>ادارة العملاء</h2>
+                   
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/hr.jpg" alt="">
+                <div class="content">
+                    <h2>الموارد البشرية</h2>
+                   
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/acc.jpg" alt="">
+                <div class="content">
+                    <h2>المحاسبة</h2>
+                   
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/traininfg.png" alt="">
+                <div class="content">
+                    <h2>مراكز التدريب</h2>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    </p>
-      
-                    <ul class="card-meta-list">
-      
-                    
-                      <li class="card-meta-item">
-                        <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-      
-                        <a href="#" class="meta-text">قراءة المزيد</a>
-                      </li>
-      
-                    </ul>
-      
-                  </div>
-      
-                </div>
-              </li>
+    <section class="bg-light" id="reviews">
 
-              <li>
-                <div class="project-card">
-      
-                  <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                    <img src="./assets/images/company.jpg" width="560" height="350" loading="lazy"
-                      alt="Nullam id dolor elit id nibh" class="img-cover">
-                  </figure>
-      
-                  <div class="card-content">
-      
-                    <h3 class="h3">
-                      <a href="#" class="card-title">الشركات الكبرى</a>
-                    </h3>
-                    <p class="card-text">
-                      إدارة العملاء المحتملين والذكاء التجاري، والإدارة والترتيب الصحيح. تم بناء التطبيق من قبل خبراء المبيعات لمنحك القدرة على إدارة مبيعاتك من إنشاء العملاء المحتملين بما في ذلك الاتصال بحملات التسويق عبر وسائل التواصل الاجتماعي الخاصة بك.
-                    </p>
-                    <ul class="card-meta-list">
-      
-                    
-                      <li class="card-meta-item">
-                        <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-      
-                        <a href="#" class="meta-text">قراءة المزيد</a>
-                      </li>
-      
-                    </ul>
-      
-      
-                  </div>
-      
+        <div class="owl-theme owl-carousel reviews-slider container">
+            <div class="review">
+                <div class="person">
+                    <img class="lg-4" src="img/Fawry.png" alt="">
+                   
                 </div>
-              </li>
               
-      
+                <h1 class="text-light mt-5" >Fawry</h1>
+
+            </div>
+            <div class="review">
+                <div class="person">
+                    <img src="img/Master-Cards.png" alt="">
+                </div>
+               
+                <h1 class="text-light mt-5" >Master Card</h1>
+
+            </div>
+            <div class="review">
+                <div class="person">
+                    <img src="img/MEEZA.png" alt="">
+                </div>
+                <h1 class="text-light mt-5" >MEEZA</h1>
+
+            </div>
+            <div class="review">
+                <div class="person">
+                    <img src="img/VISA.png" alt="">
+                </div>
+                <h1 class="text-light mt-5" >VISA</h1>
+
+            </div>
         </div>
-      </section>
+    </section>
 
-
-
-
-
-      <!-- 
-        - #CTA
-      -->
-
-      <section class="cta" aria-label="دعوة للعمل">
+    <section id="blog">
         <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>مصر</h6>
 
-          <h2 class="h2 section-title" dir="rtl">
-            انضم إلى مجتمعنا باستخدام خدماتنا ونمِّي عملك.
-          </h2>
-    
-          <a href="./contact.html" class="btn btn-primary">جرب الآن</a>
-    
+                        <img src="./img/map_v-1.png" style="background-color:#1e1e1e;"/>
+
+                        <h1>تواصل معنا </h1>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="blog-post">
+                     
+                        <div class="content">
+                            <h3>العنوان</h3>
+                            <h6> شارع 44  يوسف عباس، أمام مستشفى دار الفؤاد، مدينة نصر، القاهرة.</h6>
+
+                            
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <div class="content">
+                            <h4>رقم الهاتف</h4>
+                            <h5>+2011 1884 9996</h5>
+                            <h5>0222609509</h5>
+
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <div class="content">
+                            <h3>البريد الإلكتروني</h3>
+                            <h4>info@c-dsit.com</h4>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </div>
-      </section>
-    
-    </article>
-      </main>
+    </section>
+
+    <footer>
+        <div class="footer-top text-center">
+            
+            <div class="container">
+                <div class="row justify-content-center">
+                    
+                    <div class="col-lg-6 text-center">
+                        <div class="col-lg-6
+                        <a href="#" class="logo">
+                        </div>
+                            <img src="./img/proff.png"  alt="Ebdaa home" class="logo-containe  logo-image">
+                          </a>  
+                                             <h4 class="text-secondary" >            انضم إلى مجتمعنا باستخدام خدماتنا ونمِّي عملك.
+                                            </h4>
+                                             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="ms-lg-1 text-secondary">طلب عرض!</a>
 
 
+                        <div class="col-auto social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                            <a href="#"><i class='bx bxl-pinterest'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p class="mb-0"> &copy; 2014 Ebdaa. <br> جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
 
-  <!-- 
-    - #FOOTER
-  -->
 
-  <footer class="footer">
-    <div class="footer__container">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+              <div class="modal-body p-0">
+                  <div class="container-fluid">
+                      <div class="row gy-4">
+                          <div class="col-lg-4 col-sm-12 bg-cover"
+                              style="background-image: url(img/c2.jpg); min-height:300px;">
+                              <div>
+                                  
+                              </div>
+                          </div>
+                          <div class="col-lg-8">
+                              <form class="p-lg-5 col-12 row g-3">
+                                  <div>
+                                      <h1>Get in touch</h1>
+                                  <p>Fell free to contact us and we will get back to you as soon as possible</p>
+                                  </div>
+                                  <div class="col-lg-6">
+                                      <label for="userName" class="form-label">الاسم</label>
+                                      <input type="text" class="form-control" placeholder="Enter your name" id="userName"
+                                          aria-describedby="emailHelp">
+                                  </div>
+                                  <div class="col-lg-6">
+                                      <label for="userName" class="form-label">اسم الشركة</label>
+                                      <input type="text" class="form-control" placeholder="Enter your commercial name" id="userName"
+                                          aria-describedby="emailHelp">
+                                  </div>
+                                  <div class="col-12">
+                                      <label for="userName" class="form-label">رقم الهاتف</label>
+                                      <input type="email" class="form-control" placeholder="Enter your number" id="userName"
+                                          aria-describedby="emailHelp">
+                                  </div>
+                                  <div class="col-12">
+                                      <label for="userName" class="form-label">البريد الالكتروني</label>
+                                      <input type="email" class="form-control" placeholder="Enter your email" id="userName"
+                                          aria-describedby="emailHelp">
+                                  </div>
+                                  <div class="col-12">
+                                      <label for="exampleInputEmail1" class="form-label">تعليق</label>
+                                      <textarea name="" placeholder="Type your message here..." class="form-control" id=""  rows="4"></textarea>
+                                  </div>
 
-      <div class="footer-brand" dir="rtl">
+                                  <div class="col-12">
+                                      <button type="submit" class="btn btn-brand">Send Message</button>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
 
-        <ul class="footer-list" >
-          <li>
-            <a href="#" class="logo" >
-              <img src="./prof.png" width="74" height="74" alt="Ebdaa home" class="logo-image">
-            </a>
-          </li>
-        </ul>
-
-        <p class="footer-text">
-          &copy; 2014 Ebdaa. <br> جميع الحقوق محفوظة.
-        </p>
-
-        <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-dribbble"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
+          </div>
       </div>
+  </div>
 
-      <ul class="footer-list" dir="rtl">
 
-        <li>
-          <p class="h4 footer-list-title">ابقى على تواصل</p>
-        </li>
 
-        <li>
-          <address class="footer-text">
-            العنوان : 44 شارع يوسف عباس، أمام مستشفى دار الفؤاد، مدينة نصر، القاهرة.
-          </address>
-        </li>
 
-        <li>
-          <a href="mailto:info@c-dsit.com" class="footer-link">البريد الإلكتروني : info@c-dsit.com</a>
-        </li>
 
-        <li>
-          <a href="tel:0111884996" class="footer-link" >   رقم الهاتف :  01118849996</a>
-          </li>
-        <li>
-          <a href="tel:022260959" class="footer-link">     الهاتف الأرضي : 0222609509</a>
-        </li>
 
-      </ul>
 
-     
 
-      <div class="footer-list">
 
-        <li>
-          <p class="h4 footer-list-title">تعرف أكثر</p>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">من نحن</a>
-        </li>
-
-       
-
-        <li>
-          <a href="#" class="footer-link">اتصل بنا</a>
-        </li>
-
-      </div>
-
-    </div>
-  </footer>
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon
-  -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
